@@ -1,0 +1,12 @@
+<h1>Places List</h1>
+<ul>
+  @foreach(string place in Model)
+  {
+    <li>@place</li>
+  }
+</ul>
+<p><a href="/">Add another place</a></p>
+
+<form action="/places/list/clear" method="post">
+  <button type="submit" name="button" class="btn btn-danger">Clear all places</button>
+</form>
